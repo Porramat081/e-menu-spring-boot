@@ -80,8 +80,6 @@ public class ProductService implements IProductService{
                     return this.categoryRepository.save(newCategory);
                 });
 
-        System.out.println(category.getId() + " = " + category.getName());
-
         return this.productRepository.save(createProduct(request , category));
 
     }
