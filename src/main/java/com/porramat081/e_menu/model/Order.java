@@ -21,7 +21,12 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime orderDateTime;
+    private LocalDateTime updateDateTime;
     private BigDecimal totalAmount;
+
+    private String orderRef;
+
+    private int queue;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;

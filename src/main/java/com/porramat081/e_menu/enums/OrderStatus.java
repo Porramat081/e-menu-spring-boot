@@ -2,8 +2,9 @@ package com.porramat081.e_menu.enums;
 
 public enum OrderStatus {
     PENDING,
+    PAID,
     PROCESSING,
-    SHIPPED,
+    FINISHED,
     DELIVERED,
     CANCELLED
 }

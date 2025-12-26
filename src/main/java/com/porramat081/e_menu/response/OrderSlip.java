@@ -19,6 +19,8 @@ public class OrderSlip {
     private Set<OrderItem> orderItems;
     private LocalDateTime orderDateTime;
     private OrderStatus orderStatus;
+    private String orderRef;
+    private int queue;
     private PaymentResponse paymentResponse;
 
     public OrderSlip(Order order , PaymentResponse paymentResponse){
@@ -26,6 +28,8 @@ public class OrderSlip {
         this.orderItems = order.getOrderItems();
         this.orderDateTime = order.getOrderDateTime();
         this.orderStatus = order.getOrderStatus();
+        this.orderRef = order.getOrderRef();
+        this.queue = order.getQueue();
         this.paymentResponse = paymentResponse;
     }
 }
